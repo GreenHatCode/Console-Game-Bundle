@@ -6,11 +6,10 @@
 - [ ] Casino Number Guessing game
 - [ ] HangMan game
 ### Rock-Paper-Scissors
-- [ ] User interface
+- [X] User interface
 - [ ] Description file
-- [ ] Error handlers
-
-
+- [X] Error handlers 
+- [ ] Main loop
 
 
 
