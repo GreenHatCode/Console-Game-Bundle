@@ -99,10 +99,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="RockPaperScissors.cpp" />
+    <ClCompile Include="RockPaperScissor.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RockPaperScissors.h" />
+    <ClInclude Include="RockPaperScissor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

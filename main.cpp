@@ -1,9 +1,10 @@
 #include <iostream>
+#include "RockPaperScissor.h"
 
 int main() 
 {
 
-	std::cout << "\tCONSOLE GAME BUNDLE\t" << std::endl;
+	std::cout << "\tCONSOLE GAME BUNDLE" << std::endl;
 	// load bundle discription from txt file
 
 	std::cout << " To quit game write \'exit\' in console" << std::endl;
@@ -20,7 +21,7 @@ int main()
 			std::cout << "\n\tGood Bye!\n" << std::endl;
 			break;
 		}
-		else if (answer == "r") std::cout << " Chosen Rock-Paper-Scissors" << std::endl;
+		else if (answer == "r") RockPaperScissor(); // runs  Rock-Paper-Scissors game.
 		else if (answer == "c")std::cout << " Chosen Casino Guessing Number" << std::endl;
 		else if (answer == "h")std::cout << " Chosen Hangman Game" << std::endl;
 		else 
