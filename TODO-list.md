@@ -9,7 +9,7 @@
 - [X] User interface
 - [ ] Description file
 - [X] Error handlers 
-- [ ] Main loop
+- [X] Main loop
 
 
 
