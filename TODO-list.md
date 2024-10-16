@@ -1,5 +1,5 @@
 # Tasks to do in project
-- [ ] User interface
+- [*] User interface
 - [ ] GameCommands.md
 - [ ] README.md
 - [ ] Rock-PaperScissors game
