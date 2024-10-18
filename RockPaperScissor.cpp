@@ -1,7 +1,7 @@
-#include "RockPaperScissor.h"
-#include "Text.h"
 #include <iostream>
 #include <fstream>
+#include "RockPaperScissor.h"
+#include "Text.h"
 
 void RockPaperScissor()
 {
@@ -9,6 +9,7 @@ void RockPaperScissor()
 	std::cout << "\n\tROCK-PAPER-SCISSORS" << std::endl;
 
 	// load game description and rules from rock-paper-scissors.txt
+	PrintTextInFrame("RockPaperScissorAbout.txt", 45);
 
 	// game setup
 	std::string words[3] = { "ROCK", "PAPER", "SCISSOR" };
