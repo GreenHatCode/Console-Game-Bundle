@@ -5,7 +5,8 @@ int main()
 {
 
 	std::cout << "\tCONSOLE GAME BUNDLE" << std::endl;
-	// load bundle discription from txt file
+	// load bundle discription from txt file.
+
 
 	std::cout << " To quit game write \'exit\' in console" << std::endl;
 
