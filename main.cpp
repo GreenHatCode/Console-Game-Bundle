@@ -1,18 +1,17 @@
 #include <iostream>
 #include "RockPaperScissor.h"
+#include "Text.h"
 
 int main() 
 {
 
 	std::cout << "\tCONSOLE GAME BUNDLE" << std::endl;
-	// load bundle discription from txt file.
-
-
-	std::cout << " To quit game write \'exit\' in console" << std::endl;
+	//PrintTextInFrame("README.md", 45);
 
 	while (true)
 	{
 		std::cout << " In which game do you want to play: \n   - Rock-Paper-Scissors (r)\n   - Casino Guessing Number (c)\n   - Hangman Game (h)" << std::endl;
+		std::cout << " To quit game write \'exit\' in console" << std::endl;
 		std::cout << " enter one symbol > ";
 		std::string answer;
 		std::cin >> answer;
