@@ -1,5 +1,6 @@
 #include <iostream>
 #include "RockPaperScissor.h"
+#include "CasinoNumberGuessing.h"
 #include "Text.h"
 
 int main() 
@@ -10,7 +11,7 @@ int main()
 
 	while (true)
 	{
-		std::cout << " In which game do you want to play: \n   - Rock-Paper-Scissors (r)\n   - Casino Guessing Number (c)\n   - Hangman Game (h)" << std::endl;
+		std::cout << " In which game do you want to play: \n   - Rock-Paper-Scissors (r)\n   - Casino-Number-Guessing (c)\n   - Hangman Game (h)" << std::endl;
 		std::cout << " To quit game write \'exit\' in console" << std::endl;
 		std::cout << " enter one symbol > ";
 		std::string answer;
@@ -22,7 +23,7 @@ int main()
 			break;
 		}
 		else if (answer == "r") RockPaperScissor(); // runs  Rock-Paper-Scissors game.
-		else if (answer == "c")std::cout << " Chosen Casino Guessing Number" << std::endl;
+		else if (answer == "c")CasinoNumberGuessing(); // runs Casino-Number-Guessing game.
 		else if (answer == "h")std::cout << " Chosen Hangman Game" << std::endl;
 		else 
 		{
