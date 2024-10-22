@@ -17,7 +17,7 @@ int main()
 	{
 		std::cout << " In which game do you want to play: \n   - Rock-Paper-Scissors (r)\n   - Casino-Number-Guessing (c)\n   - Hangman Game (h)" << std::endl;
 		std::cout << " To quit game write \'exit\' in console" << std::endl;
-		std::cout << " enter one symbol > ";
+		std::cout << " Enter one symbol > ";
 		std::string answer;
 		std::cin >> answer;
 
