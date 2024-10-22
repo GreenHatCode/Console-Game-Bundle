@@ -98,11 +98,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CasinoNumberGuessing.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="RockPaperScissor.cpp" />
     <ClCompile Include="Text.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CasinoNumberGuessing.h" />
     <ClInclude Include="RockPaperScissor.h" />
     <ClInclude Include="Text.h" />
   </ItemGroup>
