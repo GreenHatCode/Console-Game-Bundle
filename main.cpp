@@ -5,6 +5,10 @@
 
 int main() 
 {
+	//general game set up
+	srand((unsigned)time(NULL)); // for Casino-Number-Guessing game, initializes random nums generator
+
+
 
 	std::cout << "\tCONSOLE GAME BUNDLE" << std::endl;
 	//PrintTextInFrame("README.md", 45);
