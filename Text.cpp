@@ -12,6 +12,7 @@ void PrintTextInFrame(const std::string& file_name, unsigned frame_width)
 		while (std::getline(inf, line))
 		{
 			text.append(line);
+			text.append("\n");
 		}
 
 		// todo: try to use only 1 counter i
