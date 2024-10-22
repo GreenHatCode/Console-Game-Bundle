@@ -1,8 +1,7 @@
 Casino Number Guessing is a simple text game in which the player has to guess a number. The player has 3 attempts to guess a number, each time the player gives a wrong answer, the computer tells whether the given number is higher or lower than the number chosen by the computer. If the player guesses the number, he gets coins, otherwise he loses them. When a player gets 1000 coins, he wins. When a player loses all the coins, he loses the game.
 
 About difficulty levels:
-
-Easy: player has to guess one number from 4
-Mediun: one number from 8
-Hard: one number from 12
+Easy: guess one number from 4
+Mediun: guess one number from 8
+Hard: guess one number from 12
 The computer always shows the range in which the player must guess the number.
