@@ -1,6 +1,7 @@
 #include <iostream>
 #include "RockPaperScissor.h"
 #include "CasinoNumberGuessing.h"
+#include "HangmanGame.h"
 #include "Text.h"
 
 int main() 
@@ -28,7 +29,7 @@ int main()
 		}
 		else if (answer == "r") RockPaperScissor(); // runs  Rock-Paper-Scissors game.
 		else if (answer == "c")CasinoNumberGuessing(); // runs Casino-Number-Guessing game.
-		else if (answer == "h")std::cout << " Chosen Hangman Game" << std::endl;
+		else if (answer == "h")HangmanGame(); // runs Hangman-Game
 		else 
 		{
 			std::cout << " There is no such command, watch the \"GameCommand.md\" and try again." << std::endl;
