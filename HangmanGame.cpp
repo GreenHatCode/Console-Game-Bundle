@@ -4,13 +4,13 @@
 
 void HangmanGame()
 {
-	// executes game Casino-Number-Guessing 
+	// executes game Casino-Number-Guessing.
 	std::cout << "\n\tHANGMAN-GAME" << std::endl;
 
-	// load game description and rules from HangmanGameAbout.txt
+	// load game description and rules from HangmanGameAbout.txt.
 	PrintTextInFrame("HangmanGameAbout.txt", 45);
 
-	// game set up
+	// game set up.
 	unsigned difficulty = 1; // easy(1) mediun(2) hard(3).
 	std::vector<std::string> words;
 	std::string word;
@@ -38,7 +38,7 @@ void HangmanGame()
 		if (uInput == "exit")return;
 		else if (uInput.find_first_not_of("0123456789") != std::string::npos)
 		{
-			std::cout << " This is not a number." << std::endl;
+			std::cout << " This is not a number.\n" << std::endl;
 			continue;
 		}
 
@@ -61,7 +61,7 @@ void HangmanGame()
 		}
 		else
 		{
-			std::cout << " There is no such level difficulty." << std::endl;
+			std::cout << " There is no such level difficulty.\n" << std::endl;
 			continue;
 		}
 
@@ -71,7 +71,7 @@ void HangmanGame()
 		for (int trials = 6; trials > 0; trials--)
 		{
 			// output current user word and draw the man.
-			std::cout << " Word: " << uWord << std::endl;
+			std::cout << "\n Word: " << AddSpaces(uWord) << std::endl;
 			std::cout << " Trials left: " << trials << std::endl;
 
 			// getting user input.
@@ -82,8 +82,9 @@ void HangmanGame()
 			if (uInput == "exit")return;
 			else if (uInput.size() != 1)
 			{
-				std::cout << "You can enter only an exit command or a single char. Try again!" << std::endl;
+				std::cout << " You can enter only an exit command or a single char. Try again!" << std::endl;
 				trials++;
+				continue;
 			}
 			else uInput = std::toupper(uInput[0]);
 
@@ -103,16 +104,28 @@ void HangmanGame()
 				break;
 			}
 
-			if (fg == true)std::cout << " Congratulations, you guessed the letter!\n" << std::endl;
-			else std::cout << " There is no such letter in the word. Try again!\n" << std::endl;
+			if (fg == true)std::cout << " Congratulations, you guessed the letter!" << std::endl;
+			else std::cout << " There is no such letter in the word. Try again!" << std::endl;
 
 			fg = false;
 		}
 
-		if (fg == true)std::cout << " Congratulations, you guessed the word!\n" << std::endl;
+		if (fg == true)std::cout << " Congratulations, you guessed the word!" << std::endl;
 		else std::cout << " You didn't guess the word. Try again!" << " The word was " << word << std::endl;
+		std::cout << std::endl;
 	}
 
 
 
+}
+
+std::string AddSpaces(const std::string& str)
+{
+	std::string result(str.size()*2, ' ');
+	for (size_t i = 0; i < str.size()*2; i+=2)
+	{
+		result[i] = str[i / 2];
+	}
+
+	return result;
 }
