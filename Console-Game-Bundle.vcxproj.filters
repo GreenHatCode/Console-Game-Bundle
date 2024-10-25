@@ -27,6 +27,9 @@
     <ClCompile Include="CasinoNumberGuessing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="HangmanGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RockPaperScissor.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CasinoNumberGuessing.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HangmanGame.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "Text.h"
 
 void PrintTextInFrame(const std::string& file_name, unsigned frame_width)
 {
@@ -32,4 +33,30 @@ void PrintTextInFrame(const std::string& file_name, unsigned frame_width)
 	else std::cout << "Can't open file \'" << file_name << "\'" << std::endl;
 }
 
+std::vector<std::string> LoadWords(const std::string& file_name)
+{
+	std::ifstream inf(file_name);
+	if (inf.is_open())
+	{
+		std::string line;
+
+		// getting vector size
+		std::getline(inf, line);
+		int size = std::stoi(line);
+
+		// filling vector with words from file
+		std::vector<std::string> words(size);
+		for (int i = 0; std::getline(inf, line); i++)
+		{
+			words[i] = line;
+		}
+
+		return words;
+	}
+	else
+	{
+		std::string errorMessage = "Can't open file \'" + file_name + "\'";
+		throw errorMessage;
+	}
+}
 
